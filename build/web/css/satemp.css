@@ -1,0 +1,33 @@
+.mtable
+{
+   width: 300px;
+   border: 1px solid #b0dd6f;
+   background: #c7d8ae;
+    border-radius: 5px 5px 0px 0px;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  -moz-border-radius:5px 5px 0px 0px;
+}
+.mtableu
+{
+   width: 300px;
+   border: 1px solid #b0dd6f;
+   background: #c7d8ae;
+    border-radius: 5px 5px 0px 0px;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  -moz-border-radius:5px 5px 0px 0px;
+}
+.th
+{
+font-family: verdana;
+font-size: 12px;
+}
+.td
+{
+font-family: verdana;
+font-size: 12px;
+}
+.bord,.label
+{
+font-family: verdana;
+font-size: 12px;
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <include file="struts-default.xml"/>
+    <package name="a" extends="struts-default">
+        
+        <action name="verify" class="empsat.ControlerBean" method="getRecords">
+            <result name="success">/retrive.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        
+         <action name="update" class="empsat.ControlerBean" method="getRecordToUpdate">
+            <result name="success">/edit.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action> 
+        
+          <action name="updateRecInDB" class="empsat.ControlerBean" method="updateRec">
+            <result name="success">/successOperation.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        
+         <action name="insert" class="empsat.ControlerBean" method="insertRecord">
+            <result name="success">/successOperation.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action> 
+        
+        <action name="delete" class="empsat.ControlerBean" method="deleteRecord">
+            <result name="success">/successOperation.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action> 
+        
+         <action name="*Link" class="empsat.Links" method="{1}">
+            <result name="insert">/insertScreen.jsp</result>
+            <result name="display">/retrive.jsp</result>           
+        </action>
+        
+    </package>
+</struts>
